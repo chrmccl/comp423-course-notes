@@ -36,6 +36,10 @@ git remote add origin https://github.com/<your-username>/<repository-name-here>
 git push --set-upstream origin main
 ```
 
+!!! warning
+
+    If you happen to have an old version of git installed, your default branch might be named `master` instead of `main`. You can list your branch names with `git branch`. If your branch is named `master`, you can rename your branch to `main` using the following command: `git branch -M main`.
+
 # Part 2. Setting Up the Dev Container
 
 1. In VSCode, open the directory you created for the project. 
@@ -103,3 +107,4 @@ git push origin main
 
 # Conclusion
 
+Congratulations! You have learned how to create a Rust dev container in VS Code, make a short program in Rust, and put your project on GitHub.
